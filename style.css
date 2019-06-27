@@ -1,13 +1,22 @@
 body{
     font-family: 'Montserrat', sans-serif;
 }
-.email{
-    margin-left:12px;
-    margin-bottom: 10px; 
+
+#submit{
+    margin-top:20px;
+    margin-left: 80px;
+
 }
- #forms {
-  padding-left:150px;
-   padding-top:170px; 
+#form{
+    padding-top: 100px;
+     margin-left:120px;
+     margin-right: 30px;
+    /*margin-bottom: 10px;  */
+}
+ .forms {
+     margin-right: 10px;
+  padding-left:100px;
+   margin-top:160px; 
    
 } 
 .box{
