@@ -31,8 +31,12 @@
       crossorigin="">
     <script src="https://unpkg.com/esri-leaflet-geocoder@2.2.14/dist/esri-leaflet-geocoder.js"
       integrity="sha512-uK5jVwR81KVTGe8KpJa1QIN4n60TsSV8+DPbL5wWlYQvb0/nYNgSOg9dZG6ViQhwx/gaMszuWllTemL+K+IXjg=="
-      crossorigin=""></script>
+      crossorigin="">
+
+      
+      </script>
     <style>
+
       
 
       #map {
@@ -99,6 +103,10 @@
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://osm.org/copyright">OpenStreetMap</a> contributors'
       }).addTo(map);
+      
+      
+       L.tileLayer('https://tiles.waqi.info/tiles/usepa-aqi/{z}/{x}/{y}.png?token=_TOKEN_ID_',
+        {attribution:  'Air  Quality  Tiles  &copy;  <a  href="http://waqi.info">waqi.info</a>'}).addTo(map);  
 
       var searchControl = L.esri.Geocoding.geosearch().addTo(map);
 
@@ -110,6 +118,7 @@
           results.addLayer(L.marker(data.results[i].latlng));
         }
       });
+      
     </script> 
     
   </div>
